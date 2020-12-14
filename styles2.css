@@ -1,0 +1,246 @@
+html {
+    font-family: 'Comic Sans MS', 'Aria';
+    text-align: center;
+    background-color: rgb(53, 19, 74);
+}
+
+h1 {
+    color: white;
+}
+
+#guru {    
+    color: white;
+}
+
+input {    
+    border-radius: .4em;    
+    border: .5px solid black;
+}
+
+#customers {   
+    margin: 0 auto; 
+    width: 80%;    
+    display: flex;    
+    justify-content: center;    /* Justify-content is main axis */    
+    /*align-items: center;      Align-items is cross axis */    
+    flex-wrap: wrap;
+} 
+
+.customer-title {    
+    font-size: 2em;    
+    text-decoration: underline;
+}
+.low {    
+    background-color: rgb(204, 228, 237);
+}
+
+.medium {    
+    background-color: rgb(30, 227, 69);
+}
+
+.high {    
+    background-color: rgb(255, 238, 0);
+}
+
+.critical {    
+    background-color: rgb(255, 79, 79);
+}
+
+.follow-up {
+    flex: 1;
+    text-align: left;
+}
+
+.follow-up-style {    
+    font-size: 1em;    
+    font-weight: 400;    
+    margin: 0 auto;    
+    height: 5%;    
+    width: 75%;    
+    border-radius: .4em;    
+    border: 1px solid black;    
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.follow-up-list {   
+    margin-bottom: 5em;
+}
+
+.follow-up:hover {
+    cursor: pointer;
+}
+
+.completed-followup {
+    text-decoration: line-through;
+    color: gray
+}
+
+.customer-style {
+    min-width: 352.500px;
+    max-width: 433.797px;    
+    width: 30%;    
+    min-height: 30em;    
+    margin: 1.5em;    
+    border: 1px solid transparent;    
+    border-radius: .4em;    
+    background-color: lightblue;    
+    text-align: center;    
+    float: left;    
+    position: relative;
+}
+    
+.remove-btn {    
+    height: 25px;    
+    border-radius: .4em;    
+    background-color: rgb(228, 237, 242);   
+    margin: 5px;
+}
+    
+.remove-btn:hover {    
+    cursor: pointer;    
+    background-color: rgb(255, 79, 79);    
+    color: white;
+}
+
+.remove-btn:active {    
+    background-color: rgb(255, 37, 37);
+}
+
+.remove-follow-up {    
+    border: .5px solid black;    
+    text-align: center;    
+    height: 1.75em;    
+    width: 1.75em;   
+}
+
+.selected {    
+    border: 1px solid black;
+}
+
+.follow-up-form {    
+    width: 50%;    
+    position: absolute;    
+    bottom: 5px;    
+    left: 25%;
+}
+
+.btn {    
+    background-color:  rgb(228, 237, 242);    
+    padding: 0 auto;    
+    border-radius: .4em;    
+    margin: 5px;
+}
+
+.btn:hover {    
+    cursor: pointer;
+}
+
+.form-input {    
+    border: 1px solid transparent;    
+    width: 100%;    
+}
+
+.edit-cust {    
+    position: absolute;    
+    width: 27.67px;     
+    bottom: 0px;    
+    right: 0%;    
+    height: 25px;
+    border: .5px solid transparent
+}
+
+.edit-cust:hover {    
+    background-color: rgb(112, 229, 255);    
+    color: white;
+}
+
+.remove-cust {    
+    position: absolute;   
+    width: 27.67px;    
+    bottom: 0px;    
+    right: 2.5em;
+    height: 25px;
+    border: .5px solid transparent
+}
+
+.modify-btn:hover {    
+    color: white;
+}
+
+/* Customer Modal Stuff */
+.modal-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .5s;
+}
+
+.modal-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cust-modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 43em;
+    width: 30em;
+    min-width: 25em;
+    border-radius: 1em;
+    position: relative;
+    background-color: rgb(237, 237, 237)
+}
+
+#customer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-input {
+    border: 1px solid black;
+    width: 10em;
+    padding: 2px;
+}
+
+.modal-label {
+    margin: 0 1em;
+}
+
+.modal-btn {
+    margin-top: 1em;
+}
+
+#close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Follow-up Modal */
+.follow-up-modal {
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    width: 20em;
+    border-radius: 1em;
+    position: relative;
+}

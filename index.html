@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="icon" href="checkbox.jpg">
+    <script src="https://kit.fontawesome.com/11631f3072.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <title>Follow-Ups</title>
+</head>
+
+<body>
+    <h1 id="title">Follow-ups</h1>
+    <!-- Test -->
+    <!-- <div>
+        <form action="">
+            <input type="text" name="newFollowUp" class="form-input" placeholder="Enter a follow-up">
+            <button class="btn">Add</button>
+        </form>
+    </div> -->
+    <!-- Test -->
+    <section id="header">
+        <header>
+            <div>
+                <form action="https://guru/Search.aspx">
+                    <label id="guru" for="guru-search"><img src="guru-logo.png" alt="">Guru</label>
+                    <input type="text" name="search" id="guru-search" placeholder="Search" autocomplete="off">
+                </form>
+            </div>
+            <div id="customer-add-remove">
+                <form action="" id="add-customer">
+                    <input type="text" id="customer-name" name="customerName" placeholder="New Customer"
+                        autocomplete="off">
+                    <button type="Submit">Add</button>
+                </form>
+            </div>
+        </header>
+    </section>
+    <section id="customers">
+
+    </section>
+
+    <div id="customer-modal" class="modal-background">
+        <div class="cust-modal">
+            <div id="modal-container">
+                <div id="customer-container">
+
+                </div>
+                <form action="" id="cust-change">
+                    <div>
+                        <label for="name" class="modal-label">Name:</label>
+                        <input type="text" id="name" class="modal-input" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="color" class="modal-label">Color:</label>
+                        <input type="color" id="color" class="modal-input" autocomplete="off">
+                    </div>
+                    <button class="btn modal-btn" type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="follow-up-modal" class="modal-background">
+        <div class="followup-modal">
+            <div class="follow-up-modal">
+                <div id="follow-up">
+
+                </div>
+                <form id="information" action="">
+                    <div>
+                        <label for="title">Task</label>
+                        <input type="text" name="task" id="title">
+                    </div>
+                    <div>
+                        <label for="date">Due Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div>
+                        <label for="priority">Priority</label>
+                        <select name="priority" id="priority">
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                            <option value="Critical">Critical</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="notes">Notes</label>
+                        <input type="text" id="notes" name="notes">
+                    </div>
+                    <button type="submit" id="save-follow-up">Save</button>
+                </form>
+                <span id="close">X</span>
+            </div>
+        </div>
+    </div>
+    <script src="uuidv4.js"></script>
+    <script src="customer-follow-up.js"></script>
+</body>
+
+</html>
